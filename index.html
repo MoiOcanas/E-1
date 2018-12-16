@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+          <artists-name
+            v-for="art in artists"
+            v-bind:art="art"
+            v-bind:key="art.id"
+          >
+        </artists-name>
+        </ul>
+      </div>
+
+    <script src="item.js"></script>
+</html>
