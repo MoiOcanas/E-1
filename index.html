@@ -9,15 +9,10 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-          <artists-name
-            v-for="art in artists"
-            v-bind:art="art"
-            v-bind:key="art.id"
+          <artists-name-list
           >
-        </artists-name>
-        </ul>
+          </artists-name-list>
       </div>
 
-    <script src="item.js"></script>
+    <script src="app.js"></script>
 </html>
